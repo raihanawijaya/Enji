@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/colorWhite"
+    android:paddingTop="0dp"
+    android:paddingBottom="0.5dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorLinen"
+            android:paddingLeft="1dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_model_code"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    tools:text="MODEL 123" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_qty"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:text="153" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_nett"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    tools:text="2101,5" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

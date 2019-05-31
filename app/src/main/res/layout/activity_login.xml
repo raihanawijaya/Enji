@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:layout_gravity="center"
+    android:padding="0dp"
+    android:background="@color/colorEnji">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Mobile Reporting System"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="25.05.19"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingBottom="20dp"
+        android:text="~ Enji Collection ~ "
+        android:textColor="@color/colorBlack"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingBottom="20dp"
+        android:text=""
+        android:textColor="@color/colorLinen"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/et_user_code"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="10dp">
+
+
+        <EditText
+            android:id="@+id/et_user_pass"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="264dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:text="L O G I N " />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="249dp"
+        android:layout_height="224dp"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        app:srcCompat="@drawable/enji"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+
+</LinearLayout>

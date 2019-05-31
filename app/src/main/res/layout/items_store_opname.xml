@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorGreen"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_store_name_chief"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="MDS CITOS - YANTI " />
+
+                <TextView
+                    android:id="@+id/tv_qty_opname"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="1234" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_trx_date"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    tools:text="2018-09-10" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:background="@color/colorRm"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_comp_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            tools:text="Enji Collection" />
+
+        <TextView
+            android:id="@+id/tv_month_code"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/tv_year_code"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            tools:text="2018" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+
+</android.support.v7.widget.Toolbar>

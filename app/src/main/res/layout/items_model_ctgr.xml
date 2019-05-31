@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/colorWhite"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorGreen"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_model_code"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    tools:text="CASUAL MODEL 123" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_qty"
+                    android:layout_width="39dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:text="153" />
+
+                <TextView
+                    android:id="@+id/tv_mtd_nett"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    tools:text="2101,5" />
+
+                <TextView
+                    android:id="@+id/tv_avg_price"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    tools:text="129.000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CtgrFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:background="@color/colorAzure"
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            tools:listitem="@layout/items_model_ctgr" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

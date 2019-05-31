@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+
+    <include layout="@layout/daily_toolbar" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/colorLinen">
+
+
+         </RelativeLayout>
+
+
+
+     </LinearLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <android.support.design.widget.TabLayout
+             android:id="@+id/tabs"
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:background="@color/colorLinen"
+             android:paddingLeft="@dimen/_5sdp"
+             android:paddingRight="@dimen/_5sdp"
+             app:tabSelectedTextColor="@color/colorBlue"
+             app:tabTextColor="@color/colorBlack"
+             app:tabGravity="center"
+             app:tabMode="scrollable" />
+
+
+         <TextView
+             android:id="@+id/tv_fragment_hdr_1"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_25sdp"
+             android:layout_below="@+id/tabs"
+             android:layout_marginLeft="0dp"
+             android:background="@color/colorRm"
+             android:gravity="center_vertical"
+             android:textColor="@color/colorBlack"
+             android:textSize="12sp"
+             tools:text=" ARTICLE / QTY       DISC / NETT" />
+
+
+                 <android.support.v4.view.ViewPager
+                     android:id="@+id/viewpager"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingBottom="@dimen/_30sdp"
+                     android:background="@color/colorLinen"
+                     android:layout_below="@+id/tv_fragment_hdr_1"
+                     app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+             <android.support.design.widget.FloatingActionButton
+                     android:id="@+id/fab_previous_date"
+                     android:layout_width="@dimen/_30sdp"
+                     android:layout_height="@dimen/_30sdp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_marginStart="45dp"
+
+                     android:src="@drawable/ic_previous"
+
+             android:background="@color/colorGray"/>
+                 <android.support.design.widget.FloatingActionButton
+                     android:id="@+id/fab_next_date"
+                     android:layout_width="@dimen/_30sdp"
+                     android:layout_height="@dimen/_30sdp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentEnd="true"
+                     android:layout_marginEnd="46dp"
+                     android:background="@color/colorGray"
+                     android:src="@drawable/ic_next" />
+
+                 <android.support.design.widget.FloatingActionButton
+                     android:id="@+id/fab_add"
+                     android:layout_width="@dimen/_30sdp"
+                     android:layout_height="@dimen/_30sdp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_centerHorizontal="true"
+                     android:background="@color/colorGray"
+                     android:visibility="invisible"
+                     android:src="@drawable/ic_delete" />
+
+
+
+
+             </RelativeLayout>
+
+         </LinearLayout>
