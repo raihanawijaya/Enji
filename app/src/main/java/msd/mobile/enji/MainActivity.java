@@ -120,14 +120,14 @@ public class MainActivity extends AppCompatActivity {
                     DailyFragment.setMonthCode(m_code);
                     DailyFragment.onRefresh();
                     tvReportName.setText("   Report By Day Qty And Nett");
-                    tvReportHeader.setText(" Day                Str#          Qty         Nett       ");
+                    tvReportHeader.setText(" Day - Str# - Qty - Nett -  AvgPrice");
                 } else if (fragment instanceof StoreFragment) {
                     StoreFragment StoreFragment = (StoreFragment) fragment;
                     StoreFragment.setYearCode(y_code);
                     StoreFragment.setMonthCode(m_code);
                     StoreFragment.onRefresh();
                     tvReportName.setText("   Report By Store ");
-                    tvReportHeader.setText(" Qty        Nett    ");
+                    tvReportHeader.setText(" Qty - Nett - AvgPrice");
                 } else if (fragment instanceof CtgrFragment) {
                     CtgrFragment CtgrFragment = (CtgrFragment) fragment;
                     CtgrFragment.setYearCode(y_code);

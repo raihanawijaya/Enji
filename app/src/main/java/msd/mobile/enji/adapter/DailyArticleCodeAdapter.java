@@ -42,18 +42,11 @@ public class DailyArticleCodeAdapter extends RecyclerView.Adapter<DailyArticleCo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final PROC_DAILY_SALES_ARTICLE_CODE dataModel = listData.get(position);
-        Locale localeID = new Locale("in","ID");
-        Float PctAch;
-        NumberFormat numberFormatCurrency = new DecimalFormat("#,##0.0");
-        NumberFormat numberFormatQty = new DecimalFormat("#,###");
 
         holder.tvInfo.setText(dataModel.getInfo());
-          //   holder.tvDAILYPlan.setText(numberFormatCurrency.format(Float.parseFloat(dataModel.getDAILYPlan())/1000000));
-        holder.tvmtdNett.setText(numberFormatCurrency.format(Float.parseFloat(dataModel.getMtdNett())));
-
-        holder.tvmtdQty.setText(numberFormatQty.format(Long.parseLong(dataModel.getMtdQty()))+ " Pcs");
-      //  PctAch = Float.parseFloat(dataModel.getDAILYNett())*100/(Float.parseFloat(dataModel.getDAILYPlan()));
-      //  holder.tvPctAch.setText(numberFormatCurrency.format(Float.parseFloat(PctAch.toString()))+ " %");
+        holder.tvmtdNett.setText(dataModel.getMtdNett());
+        holder.tvmtdQty.setText(dataModel.getMtdQty());
+        holder.tvAvgNett.setText(dataModel.getAvgNett());
 
         holder.cvItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +62,7 @@ public class DailyArticleCodeAdapter extends RecyclerView.Adapter<DailyArticleCo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private CardView cvItem;
-        private TextView tvInfo,tvmtdQty,tvmtdNett,tvmtdPlan,tvPctAch;
+        private TextView tvInfo,tvmtdQty,tvmtdNett,tvAvgNett;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -77,9 +70,7 @@ public class DailyArticleCodeAdapter extends RecyclerView.Adapter<DailyArticleCo
             tvInfo = itemView.findViewById(R.id.tv_store_name_chief);
             tvmtdQty = itemView.findViewById(R.id.tv_mtd_qty);
             tvmtdNett = itemView.findViewById(R.id.tv_mtd_nett );
-            tvmtdPlan = itemView.findViewById(R.id.tv_mtd_plan);
-        //    tvPctAch = itemView.findViewById(R.id.tv_pct_achieve);
-
+            tvAvgNett = itemView.findViewById(R.id.tv_mtd_avg);
      }
     }
 }

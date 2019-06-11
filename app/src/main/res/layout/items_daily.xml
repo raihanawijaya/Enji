@@ -6,23 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="30dp"
     android:background="@color/colorWhite"
-    android:paddingTop="1dp"
-    android:paddingBottom="1dp"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp">
+    android:paddingTop="0dp"
+    android:paddingBottom="0.5dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv_item"
         android:layout_width="384dp"
+
         android:layout_height="match_parent"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="0dp">
 
         <LinearLayout
-            android:layout_width="372dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorLinen"
-
             android:layout_gravity="center_vertical"
+            android:background="@color/colorLinen"
             android:orientation="horizontal"
             android:padding="1dp">
 
@@ -30,6 +30,7 @@
                 android:id="@+id/tv_daily_date"
                 android:layout_width="@dimen/_65sdp"
                 android:layout_height="wrap_content"
+
                 android:layout_gravity="center_vertical"
                 android:gravity="left"
                 android:textColor="@color/colorBlack"
@@ -39,33 +40,47 @@
 
             <TextView
                 android:id="@+id/tv_daily_store_count"
-                android:layout_width="35dp"
-                android:layout_height="match_parent"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
                 android:gravity="right"
                 android:textColor="@color/colorBlack"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 tools:text="120" />
 
 
             <TextView
                 android:id="@+id/tv_daily_qty"
-                android:layout_width="63dp"
-                android:layout_height="match_parent"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
                 android:gravity="right"
                 android:textColor="@color/colorBlack"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 tools:text="2" />
 
 
             <TextView
                 android:id="@+id/tv_daily_nett"
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:gravity="right"
                 android:textColor="@color/colorBlack"
-                android:textSize="14sp"
-                tools:text="2,199,8" />
+                android:textSize="12sp"
+                tools:text="22,199,800" />
 
+            <TextView
+                android:id="@+id/tv_daily_avg"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                tools:text="450,000" />
 
         </LinearLayout>
 

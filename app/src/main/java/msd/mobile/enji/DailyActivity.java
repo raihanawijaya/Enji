@@ -106,19 +106,19 @@ public class DailyActivity extends AppCompatActivity implements DatePickerDialog
                     StoreDailyFragment.setMonthCode(4);
                     StoreDailyFragment.onRefresh();
                     tvDailyReportName.setText(" Daily Sales By Store ");
-                    tvDailyReportHeader.setText("  Info               Qty                Nett");
+                    tvDailyReportHeader.setText("  Info - Qty - Nett - AvgPrice");
                 } else if (fragment instanceof ProductDailyFragment) {
                     ProductDailyFragment ProductDailyFragment = (ProductDailyFragment) fragment;
                     ProductDailyFragment.setDate(date);
                     ProductDailyFragment.onRefresh();
                     tvDailyReportName.setText(" Daily Sales By Product ");
-                    tvDailyReportHeader.setText("  Info                Qty                Nett");
+                    tvDailyReportHeader.setText("  Info - Qty - Nett - AvgPrice");
                 } else if (fragment instanceof ArticleDailyFragment) {
                     ArticleDailyFragment ArticleDailyFragment = (ArticleDailyFragment) fragment;
                     ArticleDailyFragment.setDate(date);
                     ArticleDailyFragment.onRefresh();
                     tvDailyReportName.setText(" Daily Sales By Article ");
-                    tvDailyReportHeader.setText("  Info                Qty                Nett");
+                    tvDailyReportHeader.setText("  Info - Qty - Nett - AvgPrice");
                 }
             }
 
@@ -229,9 +229,7 @@ public class DailyActivity extends AppCompatActivity implements DatePickerDialog
 
         StoreDailyFragment StoreDailyFragment = new StoreDailyFragment();
         tvDailyReportName.setText(" Daily Sales By Store ");
-
-        tvDailyReportHeader.setText("  Store               Qty                Nett");
-        viewPagerAdapter.addFragment(StoreDailyFragment, "By Store");
+        tvDailyReportHeader.setText("  Info - Qty - Nett - AvgPrice");  viewPagerAdapter.addFragment(StoreDailyFragment, "By Store");
         viewPagerAdapter.addFragment(new ProductDailyFragment(), "By Product");
         viewPagerAdapter.addFragment(new ArticleDailyFragment(), "By Article");
         viewPager.setAdapter(viewPagerAdapter);

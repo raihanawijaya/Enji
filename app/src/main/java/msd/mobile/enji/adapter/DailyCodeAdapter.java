@@ -42,11 +42,7 @@ public class DailyCodeAdapter extends RecyclerView.Adapter<DailyCodeAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final PROC_MTD_SALES_DAILY_CODE dataModel = listData.get(position);
-        Float AvgPrice;
         String DayName ="",Day="";
-
-        NumberFormat numberFormatCurrency = new DecimalFormat("#,###");
-        NumberFormat numberFormatQty = new DecimalFormat("#,###");
 
         DayName = dataModel.getDailyCode().toString();
         Day = DayName.toString().substring(5,7);
@@ -57,16 +53,10 @@ public class DailyCodeAdapter extends RecyclerView.Adapter<DailyCodeAdapter.View
             }
 
         holder.tvDailyCode.setText(dataModel.getDailyCode());
-        holder.tvDailyStoreCount.setText(numberFormatQty.format(Integer.parseInt(dataModel.getDailyStoreCount())));
-        holder.tvDailyNett.setText(numberFormatCurrency.format(Float.parseFloat(dataModel.getDailyNett())));
-     //   holder.tvDailyNett.setTextColor((Color.BLUE));
-     //   holder.tvDailyNett.setTypeface(Typeface.DEFAULT_BOLD);
-
-        holder.tvDailyQty.setText(numberFormatQty.format(Long.parseLong(dataModel.getDailyQty())));
-
-        AvgPrice = Float.parseFloat(dataModel.getDailyNett())/ Float.parseFloat(dataModel.getDailyQty());
-       // holder.tvAvgPrice.setText(numberFormatQty.format(Float.parseFloat(AvgPrice.toString())));
-        //holder.tvAvgPrice.setTextColor(Color.BLUE);
+        holder.tvDailyStoreCount.setText(dataModel.getDailyStoreCount());
+        holder.tvDailyQty.setText(dataModel.getDailyQty());
+        holder.tvDailyNett.setText(dataModel.getDailyNett());
+        holder.tvDailyAvg.setText(dataModel.getAvgNett());
 
         holder.cvItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +72,7 @@ public class DailyCodeAdapter extends RecyclerView.Adapter<DailyCodeAdapter.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private CardView cvItem;
-        private TextView tvDailyCode,tvDailyStoreCount, tvDailyQty,tvDailyNett,tvAvgPrice;
+        private TextView tvDailyCode,tvDailyStoreCount, tvDailyQty,tvDailyNett,tvDailyAvg;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -91,7 +81,7 @@ public class DailyCodeAdapter extends RecyclerView.Adapter<DailyCodeAdapter.View
             tvDailyStoreCount = itemView.findViewById(R.id.tv_daily_store_count);
             tvDailyQty = itemView.findViewById(R.id.tv_daily_qty);
             tvDailyNett = itemView.findViewById(R.id.tv_daily_nett);
-            tvAvgPrice = itemView.findViewById(R.id.tv_avg_price);
+            tvDailyAvg = itemView.findViewById(R.id.tv_daily_avg);
      }
     }
 }
